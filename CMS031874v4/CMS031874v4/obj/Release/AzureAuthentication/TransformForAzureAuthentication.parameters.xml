@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AD_ClientID" description="AD Client Application ID" defaultValue="2bca2d54-e8ec-4cc5-ac61-ac0fec19b685" tags="AD_ClientAPPID">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kokli\ Lau\\documents\\visual\ studio\ 2015\\Projects\\CMS031874v4\\CMS031874v4\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientId']/@value" />
+  </parameter>
+  <parameter name="AD_TenantId" description="AD Tenant Id" defaultValue="9840f1ff-ee96-4813-963e-2dea41ab3126" tags="AD_TenantId">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kokli\ Lau\\documents\\visual\ studio\ 2015\\Projects\\CMS031874v4\\CMS031874v4\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:TenantId']/@value" />
+  </parameter>
+  <parameter name="AD_Domain" description="AD Domain" defaultValue="koklilau95hotmail.onmicrosoft.com" tags="AD_Domain">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kokli\ Lau\\documents\\visual\ studio\ 2015\\Projects\\CMS031874v4\\CMS031874v4\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Domain']/@value" />
+  </parameter>
+  <parameter name="AD_PostLogoutRedirectUri" description="AD PostLogoutRedirectUri" defaultValue="https://localhost:44300/" tags="AD_PostLogoutRedirectUri">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kokli\ Lau\\documents\\visual\ studio\ 2015\\Projects\\CMS031874v4\\CMS031874v4\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:PostLogoutRedirectUri']/@value" />
+  </parameter>
+</parameters>

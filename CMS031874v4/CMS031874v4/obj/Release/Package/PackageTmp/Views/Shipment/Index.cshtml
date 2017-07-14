@@ -1,0 +1,66 @@
+﻿@model IEnumerable<CMS031874v4.Models.Shipment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Shipment List</h2>
+<p>@Html.ActionLink("Create New Shipment", "Create")</p>
+<table class="table">
+    <tr>
+        <th>
+            Booking Date@*@Html.DisplayNameFor(model => model.Booking_date)*@
+        </th>
+        <th>
+            Shipping Date@*@Html.DisplayNameFor(model => model.Shipping_date)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destination)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            Weight (Kg)@*@Html.DisplayNameFor(model => model.Weight)*@
+        </th>
+        <th>
+            Ship Registration No.@*@Html.DisplayNameFor(model => model.Ship_regnum)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Booking_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Shipping_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destination)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ship_regnum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
